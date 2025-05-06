@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    buildCommand: pip install -r requirements.txt # Команда для установки зависимостей
+    startCommand: python bot.py # Команда для запуска вашего бота
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        value: '7572946046:AAFV6W3x1OTPKjFzQmoklL7ndE26NvGuHqI' # Ваш токен
